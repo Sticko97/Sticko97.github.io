@@ -2,35 +2,67 @@
 <html>
 <head>
     <title>Sticko Activity</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-    <h1>Activity #1: Explain what is Blue/Green deployment</h1>
-    <p>Blue/Green deployment is an application release model that transfers user traffic in increments. The user traffic is obtained from the previous version of an app or microservice of a similar or nearly identical new release, both running in production.</p>
-    <p>Old version is <span style="color: blue;">Blue</span><br>
-       New version is <span style="color: green;">Green</span></p>
-    <p>Once data is fully transferred from Blue to Green, Blue can be thought of as a snapshot, a precaution that allows us to rollback data to a past version.</p>
+    <h1>What is CDN?</h1>
+    <p>CDN stands for Content Delivery Network. It is a network of servers distributed geographically to deliver web content, 
+        such as images, stylesheets, JavaScript, and videos, to users. The goal is to improve the performance, reliability, 
+        and efficiency of content delivery by reducing latency and optimizing the transfer of data.</p>
+    
+    <h1>How does CDN work in your own words?</h1>
+    <p>CDN works by strategically placing servers, known as edge servers or nodes,
+        in various locations worldwide. When a user requests content, 
+        the CDN automatically directs the request to the nearest edge server rather than the origin server where the content is stored. 
+        This reduces the physical distance the data must travel, minimizing latency and speeding up the delivery of content. Additionally, 
+        CDNs often cache content, 
+        storing copies of it on multiple servers, further enhancing performance.</p>
 
-    <h1>Activity #2: List out 3 remote host solutions with a short explanation</h1>
-    <p>Remote hosting is a method for delivering software applications, databases, and files to users from remote servers that are housed off-site in data centers.</p>
+    <h1>List out 10 different CDN providers</h1>
     <ol>
-        <li>
-            <strong>AWS:</strong> Offers a scalable and adaptable infrastructure for hosting data, other services, and web applications.
-        </li>
-        <li>
-            <strong>Azure:</strong> Provides a variety of cloud services, including virtual machines, databases, AI and machine learning tools, and services geared at developers, such as Azure DevOps.
-        </li>
-        <li>
-            <strong>Digital Ocean:</strong> Provides cloud computing resources including managed databases, Kubernetes, and virtual private servers (Droplets).
-        </li>
+        <li>Akamai</li>
+        <li>Cloudflare</li>
+        <li>Amazon CloudFront</li>
+        <li>Fastly</li>
+        <li>MaxCDN</li>
+        <li>KeyCDN</li>
+        <li>Microsoft Azure CDN</li>
+        <li>Rackspace CDN</li>
+        <li>Google Cloud CDN</li>
+        <li>CDN77</li>
     </ol>
 
-    <h1>Activity #3: Explain what is Rolling deployment</h1>
-    <p>A rolling deployment is a deployment technique that totally updates the infrastructure that the program is operating on in order to gradually replace older versions of an application with newer versions.</p>
+    <h1>Is CDN for performance, or availability?</h1>
+    <p>CDNs primarily enhance performance by reducing latency and accelerating the delivery of web content. 
+        While they indirectly contribute to availability by distributing content across multiple servers and providing redundancy, 
+        their primary purpose is to optimize the speed and efficiency of content delivery.</p>
 
-    <h1>Activity #4: Explain what is Canary deployment</h1>
-    <p>A canary deployment is a gradual rollout of an application that divides traffic between an existing version and a new version, pushing it out to a select group of users before rolling it out to all users.</p>
+    <h1>List pros and cons of CDNs</h1>
+    <h2>Pros</h2>
+    <ul>
+        <li>Improved Performance: CDNs reduce latency and speed up content delivery, leading to faster load times for websites and applications.</li>
+        <li>Global Reach: CDNs have servers distributed worldwide, improving content access for users regardless of their location.</li>
+        <li>Scalability: CDNs can handle increased traffic and distribute the load, preventing server overloads.</li>
+        <li>Reliability: By caching content on multiple servers, CDNs provide redundancy and reduce the risk of server failures affecting content availability.</li>
+        <li>Security: Some CDNs offer security features, such as DDoS protection and web application firewalls.</li>
+    </ul>
 
-    <h1>Activity #5: Explain what is In-place deployment</h1>
-    <p>Allows you to deploy your application without building new infrastructure; however, during these deployments, your application's availability may be impacted. Additionally, this strategy reduces the administrative burden and infrastructural expenditures related to generating new resources.</p>
+    <h2>Cons</h2>
+    <ul>
+        <li>Cost: Premium CDN services can be expensive, especially for large-scale usage.</li>
+        <li>Configuration Complexity: Setting up and configuring a CDN may require technical expertise.</li>
+        <li>Potential Cache Issues: Caching can lead to outdated content being served in some cases. Developers must manage cache settings carefully.</li>
+        <li>Dependency: Relying on a CDN means your content delivery is dependent on the CDN provider's infrastructure. If the CDN experiences issues, it can affect your content delivery.</li>
+        <li>Limited Control: Some CDNs may limit certain customization options, restricting fine-tuning for specific requirements.</li>
+    </ul>
+
+    <script>
+        // Your jQuery code goes here
+        $(document).ready(function() {
+            // Example: Change the text color of paragraphs to red
+            $('p').css('color', 'teal');
+        });
+    </script>
+
 </body>
 </html>
